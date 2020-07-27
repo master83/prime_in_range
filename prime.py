@@ -1,6 +1,6 @@
 def run():
     num = input('Enter a numeric number: ')
-    print(f'prime numbers lower than {num}: {calculate_prime_in_range(int(num))}')
+    print(f'prime numbers lower than {num}: {calculate_prime_in_range(int(float(num)))}')
 
 
 def calculate_prime_in_range(max_range):
