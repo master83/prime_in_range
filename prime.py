@@ -1,6 +1,11 @@
 def run():
-    num = input('Enter a numeric number: ')
-    print(f'prime numbers lower than {num}: {calculate_prime_in_range(int(float(num)))}')
+    try:
+        num = input('Enter a numeric number: ')
+        print(f'prime numbers lower than {num}: {calculate_prime_in_range(int(float(num)))}')
+    except ValueError as verr:
+        print('please enter integer value')
+    except Exception as ex:
+        print('invalid input')
 
 
 def calculate_prime_in_range(max_range):
